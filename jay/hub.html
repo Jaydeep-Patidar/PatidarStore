@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <title>Product Details - Hub</title>
+        <link rel="stylesheet" href="stylesheet.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="container"> 
+        <div class="navbar">
+            <div class="logo">
+                <img src="images/PBlogo.png" width="125px">
+            </div>
+            <nav>
+                <ul id="menuitems">
+                    <li><a href="PatidarStore.html">Home</a></li>
+                    <li><a href="products.html">Product</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="Contacts.html">Contact</a></li>
+                    <li><a href="logout.php">Logout</a></li>
+                </ul>
+            </nav>
+            <a href="cart.html"><img src="images/cart.png" width="30px" height="30"></a>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        </div>
+    </div>
+    <div class="small-container single-product">
+        <div class="row">
+            <div class="col-2">
+                <img src="images/usb hub.png" width="100%" id="product-img">
+            </div>
+            <div class="col-2">
+                <p>Home / Hub</p>
+                <h1>USB Hub</h1>
+                <h4>RS.499.00/-</h4>
+                <input type="number" value="1">
+                <a href="" class="btn">Add To Cart</a>                          
+                <h3>Product detail</h3>
+                <br>
+                <p>Compact design <br>
+                    Plug & Play <br>
+                    Power supply via USB Type-C port <br>
+                    Connectivity: 1x HDMI 4K, 1x USB Type-C and 2x USB 3.0 <br>
+                    Compatible with Samsung DEX Station <br>
+                    Compatible with USB-C Power Delivery charging <br>
+                    Compatible with Windows, Android, MAC OS and iOS
+                </p>
+            </div>
+        </div>
+    </div>
+<!-----------------title------------------------>
+    <div class="small-container">
+        <div class="row row-2">
+            <h2>Related Products</h2>
+            <p>View more</p>
+        </div>
+    </div>
+<!------------------product----------------------->
+    <div class="small-container">
+        <div class="row">
+            <div class="col-4">
+                <a href="headphone.html"><img src="images/headphone.png"></a>
+                <h2>Headphone</h2>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>Rs999.00/-</p>
+            </div>
+            <div class="col-4">
+                <a href="camera.html"><img src="images/dslr camera.png"></a>
+                <h2>DSLR Camera</h2>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>Rs49999.00/-</p>
+            </div>
+            <div class="col-4">
+                <a href="CPU.html"><img src="images/CPU case.png"></a>
+                <h2>CPU Case</h2>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+                <p>Rs6000.00/-</p>
+            </div>
+            <div class="col-4">
+                <a href="SSD.html"><img src="images/SATA SSD.png"></a>
+                <h2>SATA SSD</h2>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>Rs9399.00/-</p>
+            </div>
+        </div>
+    </div>
+<!-----------------footer-------------------->
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-3">
+                <h3>Shortcut</h3>
+                <ul>
+                    <li><a href="PatidarStore.html">Home</a></li>
+                    <li><a href="products.html">Product</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="Contacts.html">Contact</a></li>
+                    <li><a href="logout.php">Logout</a></li>
+                </ul>
+            </div>
+            <div class="footer-col-2">
+                <img src="images/PWlogo.png">
+                <p>Our purpose is to sustainably make the pleasure.</p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Usefull Links</h3>
+                <ul>
+                    <li>Coupons</li>
+                    <li>BLog Post</li>
+                    <li>Return Policy</li>
+                    <li>Join Affiliate</li>
+                </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Follow us</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Twitte</li>
+                    <li>Instagram</li>
+                    <li>YouTube</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">Copyright 2022 - By Jaydeep Patidar</p>
+    </div>
+</div>
+<!---------------------------js for toggle menu------------------>
+<script>
+    var menuitems = document.getElementById("menuitems");
+    menuitems.style.maxHeight = "0px";
+    function menutoggle(){
+        if(menuitems.style.maxHeight == "0px"){
+            menuitems.style.maxHeight = "200px";
+        }
+        else
+        {
+            menuitems.style.maxHeight = "0px";
+        }
+    }
+</script>
+</body>
+</html>

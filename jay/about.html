@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <title>About Us - PatidarStore</title>
+        <link rel="stylesheet" href="stylesheet.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="header">
+    <div class="container"> 
+        <div class="navbar">
+            <div class="logo">
+                <img src="images/PBlogo.png" width="125px">
+            </div>
+            <nav>
+                <ul id="menuitems">
+                    <li><a href="PatidarStore.html">Home</a></li>
+                    <li><a href="products.html">Product</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="Contacts.html">Contact</a></li>
+                    <li><a href="logout.php">Logout</a></li>
+                </ul>
+            </nav>
+            <a href="cart.html"><img src="images/cart.png" width="30px" height="30"></a>
+            <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+    </div>
+</div>
+<!-----------------------about page----------------->
+<div class="About-container">
+    <h1>About Us</h1>
+    <div class="about">
+    <h2>PatidarStore - Ecommerce Website</h2>
+    <p>We can give the opportunity to sell your product World Widely by "PatidarStore". <br> Also you can buy products, those product you want. <br>
+        We can give a platform for selling products to the "Seller" ,and "customer" can buy. <br> By the helping of "PatidarStore -ecommerce website" you can make your business "Local to Vocal" also. <br>
+        Its UserInterface (UI) is very simple to use this website. <br> We can give the service, if you have any type of problem in this website so you can contact with us by filling the contact page form then submit it. <br>
+        We can shoutout your query/problem as soon as possible. <br> It is a customer friendly website. </p>    
+    <h4>Jaydeep Patidar</h4>
+    </div>
+</div>
+<!-----------------footer-------------------->
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-3">
+                <h3>Shortcut</h3>
+                <ul>
+                    <li><a href="PatidarStore.html">Home</a></li>
+                    <li><a href="products.html">Product</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="Contacts.html">Contact</a></li>
+                    <li><a href="logout.php">Logout</a></li>
+                </ul>
+            </div>
+            <div class="footer-col-2">
+                <img src="images/PWlogo.png">
+                <p>Our purpose is to sustainably make the pleasure.</p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Usefull Links</h3>
+                <ul>
+                    <li>Coupons</li>
+                    <li>BLog Post</li>
+                    <li>Return Policy</li>
+                    <li>Join Affiliate</li>
+                </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Follow us</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Twitte</li>
+                    <li>Instagram</li>
+                    <li>YouTube</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">Copyright 2022 - By Jaydeep Patidar</p>
+    </div>
+</div>
+<!---------------------------js for toggle menu------------------>
+<script>
+    var menuitems = document.getElementById("menuitems");
+    menuitems.style.maxHeight = "0px";
+    function menutoggle(){
+        if(menuitems.style.maxHeight == "0px"){
+            menuitems.style.maxHeight = "200px";
+        }
+        else
+        {
+            menuitems.style.maxHeight = "0px";
+        }
+    }
+</script>
+</body>
+</html>

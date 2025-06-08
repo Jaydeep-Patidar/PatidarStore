@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <title>Contact Us - PatidarStore</title>
+        <link rel="stylesheet" href="stylesheet.css">
+        <link href="https:/fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https:/cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="header">
+    <div class="container"> 
+        <div class="navbar">
+            <div class="logo">
+                <img src="images/PBlogo.png" width="125px">
+            </div>
+            <nav>
+                <ul id="menuitems">
+                    <li><a href="PatidarStore.html">Home</a></li>
+                    <li><a href="products.html">Product</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="logout.php">Logout</a></li>
+                </ul>
+            </nav>
+            <a href="cart.html"><img src="images/cart.png" width="30px" height="30"></a>
+            <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+    </div>
+</div>
+<div class="contact-container">
+    <h1>Contact With Us</h1>
+    <p>We would love to respond to your queries and help you succed.<br> Feel free to get in touch with us.</p>
+     
+        <div class="contact">
+            <h2>Send Your Request</h2>
+            <form action="ContactUs.php" method="post">
+                <div class="input-row">
+                    <div class="input-group">
+                        <label>Name</label>
+                        <input type="text" placeholder="username" id="username" name="username">
+                    </div>
+                    <div class="input-group">
+                        <label>Phone</label>
+                        <input type="text" placeholder="Phone number" id="phonenumber" name="phonenumber">
+                    </div>
+                </div>
+                <div class="input-row">
+                    <div class="input-group">
+                        <label>Email</label>
+                        <input type="email" placeholder="abc@gmail.com" id="email" name="email">
+                    </div>
+                    <div class="input-group">
+                        <label>Subject</label>
+                        <input type="text" placeholder="subject"  id="Subject" name="subject">
+                    </div>
+                </div>
+                <label>Massage</label>
+                <textarea rows="5" placeholder="Your Massage" id="massage" name="massage"></textarea>
+                <button type="submit" value="submit">Submit</button>
+            </form>
+        </div>
+        
+    </div>
+
+<!-----------------footer-------------------->
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-3">
+                <h3>Shortcut</h3>
+                <ul>
+                    <li><a href="PatidarStore.html">Home</a></li>
+                    <li><a href="products.html">Product</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="Contacts.html">Contact</a></li>
+                    <li><a href="logout.php">Logout</a></li>
+                </ul>
+            </div>
+            <div class="footer-col-2">
+                <img src="images/PWlogo.png">
+                <p>Our purpose is to sustainably make the pleasure.</p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Usefull Links</h3>
+                <ul>
+                    <li>Coupons</li>
+                    <li>BLog Post</li>
+                    <li>Return Policy</li>
+                    <li>Join Affiliate</li>
+                </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Follow us</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Twitte</li>
+                    <li>Instagram</li>
+                    <li>YouTube</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">Copyright 2022 - By Jaydeep Patidar</p>
+    </div>
+</div>
+<!---------------------------js for toggle menu------------------>
+<script>
+    var menuitems = document.getElementById("menuitems");
+    menuitems.style.maxHeight = "0px";
+    function menutoggle(){
+        if(menuitems.style.maxHeight == "0px"){
+            menuitems.style.maxHeight = "200px";
+        }
+        else
+        {
+            menuitems.style.maxHeight = "0px";
+        }
+    }
+</script>
+</body>
+</html>
